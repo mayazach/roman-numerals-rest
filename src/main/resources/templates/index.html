@@ -7,21 +7,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Roman Number Generator</title>
 </head>
-<body class="text-center">
-<h1 class="h3 mb-3 font-weight-normal">Roman Numeral Converter</h1>
-<div class="row">
-    <label for="inputNumber">
-        Convert numbers to Roman numerals,
+    <body class="text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Roman Numeral Converter</h1>
+        <form action="#" th:action="@{/convert}" method="post">
+            <div class="row">
+                <label for="inputNumber">
+                    Convert numbers to Roman numerals,
+                    <br>
+                    Convert Roman numerals to numbers
+                </label>
+            </div>
+            <div class="row">
+                <input class="mb-3" th:name="number" type="text" id="inputNumber" required="" autofocus="">
+            </div>
+            <br>
+            <button class="mb-3 btn btn-primary" type="submit">Calculate</button>
+        </form>
         <br>
-        Convert Roman numerals to numbers
-    </label>
-</div>
-<div class="row">
-    <input class="mb-3" name="number" type="text" id="inputNumber" required="" autofocus="">
-</div>
-<br>
-<button class="mb-3 btn btn-primary" type="submit">Calculate</button>
-<br>
-<p>I am a placeholder.</p>
-</body>
+        <p th:text="${convertedValue}"></p>
+    </body>
 </html>
