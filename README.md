@@ -1,4 +1,10 @@
-## RomanNumeralGenerator
+## Roman numerals  converter web service
+
+Run the RomanNumeralsApplications class to start this application on http://localhost:8080
+
+On the main page, enter a roman number between 1 and 3999 to convert it to decimal, or a decimal number in the same range to convert it to roman.
+
+### RomanNumeralGenerator
 
 The RomanNumeralGenerator class contains the generate and parse functions, for converting arabic numbers to roman numbers and the reverse. For the roman numbers, standard form with subtractive notation is used. Only capital characters are accepted. There is only one class instead of an interface and class implementing it, as there is just one implementation at the moment.
 
