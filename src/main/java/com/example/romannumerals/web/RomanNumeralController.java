@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 @Controller
 public class RomanNumeralController {
     private final RomanNumeralGenerator generator;
@@ -22,7 +23,7 @@ public class RomanNumeralController {
         }
         catch (IllegalArgumentException exception){
             try{
-                output=generator.generate(Integer.parseInt(number));
+                output = generator.generate(Integer.parseInt(number));
             }
             catch (IllegalArgumentException exception1){
                 output = "Please enter a valid decimal or roman number between 1 and 3999";

@@ -33,6 +33,7 @@ public class RomanNumeralGeneratorTest {
     public void generateInvalidInputTests(){
         Assertions.assertThrows(IllegalArgumentException.class,() -> generator.generate(4000));
         Assertions.assertThrows(IllegalArgumentException.class,() -> generator.generate(-900));
+        Assertions.assertThrows(IllegalArgumentException.class,() -> generator.generate(0));
     }
 
     @Test

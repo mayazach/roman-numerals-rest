@@ -36,7 +36,7 @@ public class RomanNumeralGenerator {
     }
 
     public String generate(Integer number){
-        if(number > 3999 || number < 0)
+        if(number > 3999 || number < 1)
             throw new IllegalArgumentException("Number must be between 1 and 3999");
         StringBuilder romanNumber = new StringBuilder();
         while(number > 0){
